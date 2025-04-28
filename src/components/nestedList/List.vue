@@ -1,36 +1,37 @@
 <script setup lang="js">
-import { ref } from 'vue';
-import ListItem from './ListItem.vue';
+import { ref } from "vue";
+import ListItem from "./ListItem.vue";
+
 
 const items = [
-  {
-    id: 1,
-    name: "Item 1",
-  },
-  {
-    id: 2,
-    name: "Item 2",
-  },
-  {
-    id: 3,
-    name: "Item 3",
-  },
-  {
-    id: 4,
-    name: "Item 4",
-  },
-  {
-    id: 5,
-    name: "Item 5",
-  },
-]
+	{
+		id: 1,
+		name: "Item 1",
+	},
+	{
+		id: 2,
+		name: "Item 2",
+	},
+	{
+		id: 3,
+		name: "Item 3",
+	},
+	{
+		id: 4,
+		name: "Item 4",
+	},
+	{
+		id: 5,
+		name: "Item 5",
+	},
+];
 const setupRef = (list) => {
-  let defatuls = [];
-  for (const item of list) {
-    defatuls.push(false);
-  }
-  return defatuls
-}
+	const defatuls = [];
+	for (const item of list) {
+		defatuls.push(false);
+	}
+	return defatuls;
+};
 
 const isExpanded = ref(setupRef(items));
 </script>

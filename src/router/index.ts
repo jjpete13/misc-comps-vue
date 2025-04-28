@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CardView from "../views/CardView.vue";
-import SideDrawerView from "../views/SideDrawerView.vue";
+import ListView from "../views/ListView.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +13,7 @@ const router = createRouter({
 		{
 			path: "/list",
 			name: "Nested List",
-			component: SideDrawerView
+			component: ListView
 		},
 	],
 });

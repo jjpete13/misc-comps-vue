@@ -1,25 +1,25 @@
 <script>
-import { defineComponent } from 'vue';
-import ArrowRight from '../icons/ArrowRight.vue';
+import { defineComponent } from "vue";
+import ArrowRight from "../icons/ArrowRight.vue";
 
 export default defineComponent({
-  components: {
-    ArrowRight
-  },
-  props: {
-    isExpanded: {
-      type: Boolean,
-      default: false
-    },
-    name: {
-      type: String,
-      default: ''
-    },
-    expandedContent: {
-      type: String,
-      default: ''
-    }
-  },
+	components: {
+		ArrowRight,
+	},
+	props: {
+		isExpanded: {
+			type: Boolean,
+			default: false,
+		},
+		name: {
+			type: String,
+			default: "",
+		},
+		expandedContent: {
+			type: String,
+			default: "",
+		},
+	},
 });
 </script>
 
@@ -48,6 +48,7 @@ export default defineComponent({
 .collapsed-row {
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .expanded-row {

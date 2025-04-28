@@ -1,31 +1,31 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-  const props = defineProps({
-    color: {
-      type: String,
-      default: '#000'
-    },
-    size: {
-      type: String,
-      default: '1em'
-    },
-    clickable: {
-      type: Boolean,
-      default: false
-    },
-    isExpanded: {
-      type: Boolean,
-      default: false
-    }
-  })
-  const emit = defineEmits(['click'])
-  const Container = props.clickable ? 'button' : 'div'
-  // const isExpanded = ref(false)
+const props = defineProps({
+	color: {
+		type: String,
+		default: "#000",
+	},
+	size: {
+		type: String,
+		default: "1em",
+	},
+	clickable: {
+		type: Boolean,
+		default: false,
+	},
+	isExpanded: {
+		type: Boolean,
+		default: false,
+	},
+});
+const emit = defineEmits(["click"]);
+const Container = props.clickable ? "button" : "div";
+// const isExpanded = ref(false)
 
-  // const handleClick = () => {
-  //   isExpanded.value = !isExpanded.value
-  // }
+// const handleClick = () => {
+//   isExpanded.value = !isExpanded.value
+// }
 </script>
 
 
