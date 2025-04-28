@@ -10,10 +10,9 @@ const tabs = [
 
 const activeTab = ref(tabs[0]);
 
-const setActiveTab = (tab) => {
-  activeTab.value = tab;
+const setActiveTab = (tab: { name: string; content: string }) => {
+	activeTab.value = tab;
 };
-
 </script>
 
 <template>
@@ -54,7 +53,7 @@ const setActiveTab = (tab) => {
 	margin: 0 0 10px 0;
 	overflow-x: auto;
 	scrollbar-width: none;
-  border-radius: inherit;
+  border-radius: 15px 15px 0 0;
 
 	* + button {
 		border-left: 1px solid #858585;

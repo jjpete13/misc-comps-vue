@@ -5,19 +5,20 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <header>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Card</RouterLink>
+        <RouterLink to="/list">Nested List</RouterLink>
       </nav>
   </header>
-
-  <RouterView />
+  <main>
+   <RouterView /> 
+  </main>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -27,7 +28,6 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: start;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -46,6 +46,15 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {

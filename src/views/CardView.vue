@@ -4,7 +4,6 @@ import CardWithTabs from "../components/cardWithTabs/CardWithTabs.vue";
 
 <template>
   <div class="home">
-    <h1>This is a home page</h1>
     <CardWithTabs />
   </div>
     
